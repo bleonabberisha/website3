@@ -27,16 +27,122 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1>Grundlæggende animation</h1>
+
+      <section class="grid-container">
+        <div class="grid-item">
+          <h2>idegenereing, stil analyse og adobe illustrator</h2>
+          <p>
+            I tema 4 arbejdede vi med idégenerering og stilanalyse. Til
+            idégenerering valgte jeg et verbum, et sted og en ting: "hoppe", "på
+            en skole" og "en blyant". Disse elementer brugte jeg til at udvikle
+            min spilidé. For stilen valgte jeg Kawaii 3 og 4, da jeg mente, at
+            de rundede, rummelige og søde figurer passede bedst til børn. Vi
+            lærte også at bruge Adobe Illustrator, hvor vi importerede vores
+            tegninger af figurer og skærme og lærte at tegne dem digitalt. Vi
+            lavede selv vores spilkomponenter vha. vektorgrafik. Det var
+            udfordrende i starten, men blev lettere med tiden. Til højre kan man
+            se de illustrationer, jeg har lavet i Adobe Illustrator, som indgår
+            i mit spil
+          </p>
+        </div>
+        <div class="grid-item">
+          <img src="../img/billede5.jpg" alt="b1" />
+          <img src="../img/billede6.jpg" alt="b2" />
+          <img src="../img/billede7.jpg" alt="b3" />
+        </div>
+        <div class="grid-item">
+          <h2>Forskellige diagrammer</h2>
+          <p>
+            Aktivitetsdiagram Et aktivitetsdiagram viser det overordnede flow af
+            handlinger og beslutninger i et program. Det beskriver aktivitet og
+            består af detaljerede handlinger og beslutninger. Det viser også
+            trin for trin når man spiller og hvordan man vinder/taber.
+          </p>
+          <p>
+            State Machine Diagram Det viser de forskellige tilstande et system
+            kan have og hvordan det skifter mellem dem baseret på hændelser. Det
+            giver et detaljeret overblik over systemets adfærd.
+          </p>
+          <p>
+            Anvendelse i Visual Studio Code I Visual Studio Code kan du bruge
+            plugins til at skabe og visualisere aktivitets- og state machine
+            diagrammer, hvilket hjælper med planlægning og dokumentation af
+            koden.
+          </p>
+          <button class="custom-button">
+            <a href="https://bleonabberisha.dk/t4animation/website"
+              >Link til hjemmeside</a
+            >
+          </button>
+        </div>
+        <div class="grid-item">
+          <img src="../img/billede8.jpg" alt="diagram" />
+        </div>
+        <div class="grid-item">
+          <div class="section_box">
+            <h2>Javascript; Kodningen bag spillet</h2>
+            <p>
+              I et tidligere tema lærte vi kort om JavaScript, men i dette tema
+              var det vores hovedfokus. JavaScript gør hjemmesider levende og
+              interaktive. Det kan ændre CSS og HTML og bruges til mange ting,
+              som at reagere på brugerens handlinger, tjekke formularer og lave
+              animationer. Vi brugte JavaScript til at skabe en levende
+              animation, altså et helt videospil.
+            </p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="section_box">
+            <h2>Eventlisteners</h2>
+            <p>
+              window.addEventListener("load", start);: Starter spillet, når
+              vinduet er loadet. document.querySelector("#til_info")
+              </p>
+              <p>addEventListener("click", info);: Skifter til informationsskærmen,
+              når der klikkes på informationsknappen.
+            </p>
+              <p>document.querySelector("#play"). addEventListener("click",
+              startGame);: Starter spillet, når der klikkes på play-knappen.</p>
+            </p>
+          </div>
+        </div>
+        <div class="grid-item">
+            <div class="section_box">
+              <h2>Funktioner</h2>
+            <p>start(): Viser startskærmen og sætter event listeners op.</p>
+            <p>info(): Viser informationsskærmen.</p>
+            <p>startGame(): Initialiserer spillet ved at nulstille point og liv, samt starte animationerne.</p>
+            <p>clickHaand() og clickFinger(): Håndterer klik på de forskellige objekter, opdaterer point og liv, og stopper animationer.</p>
+            <p>resetHaand() og resetFinger(): Nulstiller animationer og positioner for de forskellige objekter.</p>
+            <p>endGame(): Stopper spillet og viser enten game over eller level complete skærmen afhængig af point og liv.</p>
+            <p>gameOver() og levelComplete(): Viser henholdsvis game over og level complete skærmen og sætter event listeners for at spille igen.</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="section_box">
+              <h2>Hjælpefunktioner og forkorte js</h2>
+            <p>generateRandomNumber(antal): Genererer et tilfældigt tal mellem 1 og antal.</p>
+            <p>hideAllScreens(): Skjuler alle skærme ved at tilføje klassen "hide".</p>
+            <p>Brug af Hjælpefunktioner: Funktionen generateRandomNumber(antal) bruges flere gange for at undgå gentagelse af kode, der genererer tilfældige tal. Dette gør koden kortere og mere overskuelig.</p>
+     <p>CSS Klasser: Ved at tilføje og fjerne CSS klasser som fald, forsvind, frys, osv., styres animationer og ændringer af elementernes udseende effektivt.</p>
+            </div>
+          </div>
+      </section>
+      <video controls autoplay muted>
+        <source src="../vid/videospil.mov" type="video/mp4" />
+      </video>
+    </main>
     <footer>
-        <ul class="footer-links">
-          <li><a href="../html/t2.html">Tema 2</a></li>
-          <li><a href="../html/t3.html">Tema 3</a></li>
-          <li><a href="../html/t4.html">Tema 4</a></li>
-          <li><a href="../html/t5.html">Tema 5</a></li>
-          <li><a href="../html/ommig.html">Om mig</a></li>
-        </ul>
-        <p class="copyright">Copyright &copy; Bleona Berisha</p>
-      </footer>
+      <ul class="footer-links">
+        <li><a href="../html/t2.html">Tema 2</a></li>
+        <li><a href="../html/t3.html">Tema 3</a></li>
+        <li><a href="../html/t4.html">Tema 4</a></li>
+        <li><a href="../html/t5.html">Tema 5</a></li>
+        <li><a href="../html/ommig.html">Om mig</a></li>
+      </ul>
+      <p class="copyright">Copyright &copy; Bleona Berisha</p>
+    </footer>
   </body>
 </html>

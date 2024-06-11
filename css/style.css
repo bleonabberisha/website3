@@ -17,7 +17,7 @@ html {
   --fs-xs: 0.7rem;
   --primaer-clr: #6a3e2f;
   --sekundaer-clr: #e3d2c3;
-  --tridaer-clr: #9C8360;
+  --tridaer-clr: #9c8360;
   --firdaer-clr: #694d3c;
   --femdaer-clr: #ffffff;
   --ff-headlines: "Brolimo", sans-serif;
@@ -42,6 +42,11 @@ main p {
   color: white;
   margin-bottom: 20px;
   max-width: 50ch; /* Begræns linjelængden til 50 tegn pr. linje */
+}
+
+.center {
+  text-align: center;
+  align-items: center;
 }
 
 main ul {
@@ -81,6 +86,14 @@ h4 {
 
 a {
   text-decoration: none;
+}
+
+/* VIDEO */
+video {
+  
+  margin: 0 auto;
+  max-width: 90%;
+  align-items: center;
 }
 
 /* BILLEDER */
@@ -125,8 +138,8 @@ img {
   font-family: var(--ff-headlines);
   font-size: var(--fs-m);
   color: var(--primaer-clr);
+  margin-bottom: 2rem;
 }
-
 
 /* Knapper */
 .custom-button {
@@ -215,4 +228,3 @@ header {
   padding: 2em 0; /* Øger padding i toppen og bunden */
   transition: background-color 0.3s ease;
 }
-
