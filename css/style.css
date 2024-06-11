@@ -9,15 +9,15 @@
 
 html {
   --fs-body: 20px;
-  --fs-xxl: 6.4rem;
-  --fs-xl: 3rem;
-  --fs-l: 3rem;
+  --fs-xxl: 4.5rem;
+  --fs-xl: 2.5rem;
+  --fs-l: 2.5rem;
   --fs-m: 1.3rem;
   --fs-s: 1rem;
   --fs-xs: 0.7rem;
   --primaer-clr: #6a3e2f;
   --sekundaer-clr: #e3d2c3;
-  --tridaer-clr: #b89b89;
+  --tridaer-clr: #9C8360;
   --firdaer-clr: #694d3c;
   --femdaer-clr: #ffffff;
   --ff-headlines: "Brolimo", sans-serif;
@@ -25,66 +25,194 @@ html {
 }
 
 body {
-    background-color: var(--primaer-clr);
-    max-width: 1200px;
-    margin: 0 auto; /* Centrerer indholdet på skærmen */
-    font-size: var(--fs-body);
-    color: var(--sekundaer-clr);
-    line-height: var(--lh-main);
-    }
-    
-    
-    main {
-    padding: 0 80px; /* Tilføjer lidt plads på siderne */
-    }
-    
-    
-    main p {
-    font-family: var(--ff-main);
-    font-size: var(--fs-xs);
-    line-height: var(--lh-main);
-    color: white;
-    margin-bottom: 20px;
-    max-width: 50ch; /* Begræns linjelængden til 50 tegn pr. linje */
-    }
-    
-    
-    main ul {
-    font-family: var(--ff-main);
-    font-size: var(--fs-xs);
-    line-height: var(--lh-main);
-    color: var(--sekundaer-clr);
-    list-style-type: disc;
-    padding: 0;
-    }
-    
-    
-    h1 {
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-xl);
-    color: var(--sekundaer-clr);
-    }
-    
-    
-    h2 {
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-xl);
-    color: var(--sekundaer-clr);
-    text-align: center;
-    margin: 4%;
-    }
-    
-    
-    h3 {
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-m);
-    color: var(--tridaer-clr);
-    }
-    
-    
-    h4 {
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-m);
-    color: var(--primaer-clr);
-    }
-    
+  background-color: var(--primaer-clr);
+  max-width: 1200px;
+  margin: 0 auto; /* Centrerer indholdet på skærmen */
+  font-size: var(--fs-body);
+  color: var(--sekundaer-clr);
+}
+
+main {
+  padding: 0 80px; /* Tilføjer lidt plads på siderne */
+}
+
+main p {
+  font-family: var(--ff-main);
+  font-size: var(--fs-s);
+  color: white;
+  margin-bottom: 20px;
+  max-width: 50ch; /* Begræns linjelængden til 50 tegn pr. linje */
+}
+
+main ul {
+  font-family: var(--ff-main);
+  font-size: var(--fs-xs);
+  line-height: var(--lh-main);
+  color: var(--sekundaer-clr);
+  list-style-type: disc;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-xxl);
+  color: var(--sekundaer-clr);
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-xl);
+  color: var(--sekundaer-clr);
+  text-align: center;
+}
+
+h3 {
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-m);
+  color: var(--femdaer-clr);
+}
+
+h4 {
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-m);
+  color: var(--primaer-clr);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* BILLEDER */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block; /* Tilføjet for at gøre margin-auto effektive */
+  margin: 0 auto; /* Centrerer billederne horisontalt */
+}
+
+.image-container {
+  margin-bottom: 50px; /* Mindre margin for tættere afsnit */
+}
+
+.section img,
+.section iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block; /* Tilføjet for at gøre margin-auto effektive */
+  margin: 0 auto; /* Centrerer billederne horisontalt */
+}
+
+/* Billede tekst */
+
+.billede-text {
+  margin-top: 5px;
+  /* text-align: center; */
+  font-size: var(--fs-xxs);
+  font-style: italic;
+}
+
+/* Baggrundsboks */
+.section_box {
+  background-color: var(--tridaer-clr);
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Let skygge */
+  max-width: 400px; /* Max bredde for boksen */
+  text-align: left; /* Venstrejustering af teksten */
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-m);
+  color: var(--primaer-clr);
+}
+
+
+/* Knapper */
+.custom-button {
+  background-color: var(--sekundaer-clr);
+  color: var(--primaer-clr);
+  border: 2px solid var(--primaer-clr);
+  border-radius: 50px; /* Afrundede hjørner */
+  padding: 10px 20px;
+  font-size: var(--fs-s);
+  font-family: var(--ff-headlines);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 30px;
+}
+.custom-button a {
+  color: var(--primaer-clr);
+}
+.custom-button a:hover {
+  color: var(--sekundaer-clr);
+}
+.custom-button:hover {
+  background-color: var(--primaer-clr);
+  color: var(--sekundaer-clr);
+  border-color: var(--sekundaer-clr);
+}
+
+/* Burger menu variabler */
+header {
+  color: var(--sekundaer-clr);
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-s);
+}
+
+.header a,
+.footer-links a {
+  color: var(--tridaer-clr);
+  text-decoration: none;
+}
+
+.header a:hover,
+.footer-links a:hover {
+  text-decoration: underline;
+  color: var(--sekundaer-clr);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 1em 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1em 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links a {
+  color: var(--overige-clr);
+  text-decoration: none;
+  font-size: var(--fs-s);
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: var(--sekundaer-clr);
+}
+
+.copyright {
+  font-size: var(--fs-xs);
+  color: var(--tridaer-clr);
+  text-align: center;
+}
+#menu-toggle:checked ~ nav {
+  background-color: var(--primaer-clr);
+  padding: 2em 0; /* Øger padding i toppen og bunden */
+  transition: background-color 0.3s ease;
+}
+
