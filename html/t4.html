@@ -55,22 +55,25 @@
         <div class="grid-item">
           <h2>Forskellige diagrammer</h2>
           <p class="str">
-            Vi lærte om 2 forskellige diagrammer
-            Et af dem er et aktivitetsdiagram, der viser det overordnede flow af
-            handlinger og beslutninger i et program. Det beskriver aktivitet og
-            består af detaljerede handlinger og beslutninger. Det viser også
-            trin for trin når man spiller og hvordan man vinder/taber. Til højre ses mit aktivitetsdiagram, som var med til at give et overordnet billede af hvordan mit spil ville forløbe
+            Vi lærte om 2 forskellige diagrammer Et af dem er et
+            aktivitetsdiagram, der viser det overordnede flow af handlinger og
+            beslutninger i et program. Det beskriver aktivitet og består af
+            detaljerede handlinger og beslutninger. Det viser også trin for trin
+            når man spiller og hvordan man vinder/taber. Til højre ses mit
+            aktivitetsdiagram, som var med til at give et overordnet billede af
+            hvordan mit spil ville forløbe
           </p>
           <p class="str">
-            Det andet diagram er et State Machine Diagram. Det viser de forskellige tilstande et system
-            kan have og hvordan det skifter mellem dem baseret på hændelser. Det
-            giver et detaljeret overblik over systemets adfærd.
+            Det andet diagram er et State Machine Diagram. Det viser de
+            forskellige tilstande et system kan have og hvordan det skifter
+            mellem dem baseret på hændelser. Det giver et detaljeret overblik
+            over systemets adfærd.
           </p>
-          <button class="custom-button">
-            <a href="https://bleonabberisha.dk/t4animation/website"
-              >Link til hjemmeside</a
-            >
-          </button>
+          <a
+            class="custom-button"
+            href="https://bleonabberisha.dk/t4animation/website"
+            >Link til hjemmeside</a
+          >
         </div>
         <div class="grid-item">
           <img src="../img/billede8.jpg" alt="diagram" />
@@ -91,36 +94,52 @@
         <div class="grid-item">
           <div class="section_box">
             <h2>Eventlisteners</h2>
-            <p>Noget vi bruger meget i JS er Eventlistener</p>
-            <p>
-                Et eksempel på en Eventlistener er hvordan man evt. kan starte sit spil når siden loades
-              window.addEventListener("load", start);: 
-              </p>
-              <p> En Eventlistener definerer en handling, som skal udføres, når en bestemt begivenhed opstår.
+            <p class="str">Noget vi bruger meget i JS er Eventlistener</p>
+            <p class="str">
+              Et eksempel på en Eventlistener er hvordan man evt. kan starte sit
+              spil når siden loades window.addEventListener("load", start);:
+            </p>
+            <p class="str">
+              En Eventlistener definerer en handling, som skal udføres, når en
+              bestemt begivenhed opstår.
             </p>
           </div>
         </div>
         <div class="grid-item">
-            <div class="section_box">
-              <h2>Funktioner</h2>
-            <p>start(): Viser startskærmen og sætter event listeners op.</p>
-            <p>info(): Viser informationsskærmen.</p>
-            <p>startGame(): Initialiserer spillet ved at nulstille point og liv, samt starte animationerne.</p>
-            <p>clickHaand() og clickFinger(): Håndterer klik på de forskellige objekter, opdaterer point og liv, og stopper animationer.</p>
-            <p>resetHaand() og resetFinger(): Nulstiller animationer og positioner for de forskellige objekter.</p>
-            <p>endGame(): Stopper spillet og viser enten game over eller level complete skærmen afhængig af point og liv.</p>
-            <p>gameOver() og levelComplete(): Viser henholdsvis game over og level complete skærmen og sætter event listeners for at spille igen.</p>
-            </div>
+          <div class="section_box">
+            <h2>Funktioner</h2>
+            <p class="str">Funktioner er de funktioner der er i spillet</p>
+            <p class="str">
+              Eksempelvis; start, info, StartGame, clickHaand, gameOver osv..
+            </p>
+            <p class="str">
+              I mit spil havde jeg selv lavet funktionerne ClickHaand og
+              ClickFinger, som er med til at håndtere klik på de forskellige
+              objekter, opdaterer point og liv, og stopper animationer
+            </p>
+            <p class="str">
+              Der var også reset funktioner, som resetFinger, som er med til at
+              nulstille animationen og positionen for de objekter
+            </p>
           </div>
-          <div class="grid-item">
-            <div class="section_box">
-              <h2>Hjælpefunktioner og forkorte js</h2>
-            <p>generateRandomNumber(antal): Genererer et tilfældigt tal mellem 1 og antal.</p>
-            <p>hideAllScreens(): Skjuler alle skærme ved at tilføje klassen "hide".</p>
-            <p>Brug af Hjælpefunktioner: Funktionen generateRandomNumber(antal) bruges flere gange for at undgå gentagelse af kode, der genererer tilfældige tal. Dette gør koden kortere og mere overskuelig.</p>
-     <p>CSS Klasser: Ved at tilføje og fjerne CSS klasser som fald, forsvind, frys, osv., styres animationer og ændringer af elementernes udseende effektivt.</p>
-            </div>
+        </div>
+        <div class="grid-item">
+          <div class="section_box">
+            <h2>Hjælpefunktioner og forkorte js</h2>
+            <p class="str">
+              En af de hjælpefunktioner jeg selv synes var meget nyttigt var
+              generateRandomNumber, som går ind og genererer et tilfældigt tal
+              mellem 1 og antal Den bruges for netop at undgå at gentage sine
+              koder, der genererer tilfældige tal = en kortere og mere
+              overskuelig kode
+            </p>
+
+            <p class="str">
+              En anden hjælpefunktion er også hideAllScreens(): Som er med til
+              at skjule alle skærme ved at tilføje klassen "hide".
+            </p>
           </div>
+        </div>
       </section>
       <video controls autoplay muted>
         <source src="../vid/videospil.mov" type="video/mp4" />

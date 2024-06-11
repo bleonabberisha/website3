@@ -63,7 +63,6 @@ h1 {
   font-size: var(--fs-xxl);
   color: var(--sekundaer-clr);
   text-align: center;
-  margin-bottom: 0.5;
   margin-top: 0;
 }
 
@@ -330,6 +329,7 @@ header {
 .skrift {
   margin-right: 35%;
 }
+
 
 /* Fordi jeg har ændret i meget margin og padding, skulle jeg skubbe det lidt tilbage for at passe mobil form*/
 @media (max-width: 800px) {
