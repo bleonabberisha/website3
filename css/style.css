@@ -9,6 +9,7 @@
 
 html {
   --fs-body: 20px;
+  --fs-xxxl: 8rem;
   --fs-xxl: 4.5rem;
   --fs-xl: 2.5rem;
   --fs-l: 2.5rem;
@@ -79,8 +80,8 @@ h3 {
 
 h4 {
   font-family: var(--ff-headlines);
-  font-size: var(--fs-m);
-  color: var(--primaer-clr);
+  font-size: var(--fs-xxxl);
+  color: var(--sekundaer-clr);
 }
 
 a {
@@ -266,4 +267,21 @@ header {
 
 .grid-items {
   text-align: center;
+}
+
+.portrait {
+  border-radius: 20%;
+  margin-left: 20%;
+  margin-bottom: 30%;
+  margin-top: 15%;
+}
+
+.juster {
+  text-align: left;
+  margin-left: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding: 0;
 }
