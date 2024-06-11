@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Brolimo";
+  src: url(../font/brolimo/BrolimoRegular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../font/Lato/25090817022.ttf) format("ttf");
+}
+
+html {
+  --fs-body: 20px;
+  --fs-xxl: 6.4rem;
+  --fs-xl: 3rem;
+  --fs-l: 3rem;
+  --fs-m: 1.3rem;
+  --fs-s: 1rem;
+  --fs-xs: 0.7rem;
+  --primaer-clr: #6a3e2f;
+  --sekundaer-clr: #e3d2c3;
+  --tridaer-clr: #b89b89;
+  --firdaer-clr: #694d3c;
+  --femdaer-clr: #ffffff;
+  --ff-headlines: "Brolimo", sans-serif;
+  --ff-main: "Lato", sans-serif;
+}
+
+body {
+    background-color: var(--primaer-clr);
+    max-width: 1200px;
+    margin: 0 auto; /* Centrerer indholdet på skærmen */
+    font-size: var(--fs-body);
+    color: var(--sekundaer-clr);
+    line-height: var(--lh-main);
+    }
+    
+    
+    main {
+    padding: 0 80px; /* Tilføjer lidt plads på siderne */
+    }
+    
+    
+    main p {
+    font-family: var(--ff-main);
+    font-size: var(--fs-xs);
+    line-height: var(--lh-main);
+    color: white;
+    margin-bottom: 20px;
+    max-width: 50ch; /* Begræns linjelængden til 50 tegn pr. linje */
+    }
+    
+    
+    main ul {
+    font-family: var(--ff-main);
+    font-size: var(--fs-xs);
+    line-height: var(--lh-main);
+    color: var(--sekundaer-clr);
+    list-style-type: disc;
+    padding: 0;
+    }
+    
+    
+    h1 {
+    font-family: var(--ff-headlines);
+    font-size: var(--fs-xl);
+    color: var(--sekundaer-clr);
+    }
+    
+    
+    h2 {
+    font-family: var(--ff-headlines);
+    font-size: var(--fs-xl);
+    color: var(--sekundaer-clr);
+    text-align: center;
+    margin: 4%;
+    }
+    
+    
+    h3 {
+    font-family: var(--ff-headlines);
+    font-size: var(--fs-m);
+    color: var(--tridaer-clr);
+    }
+    
+    
+    h4 {
+    font-family: var(--ff-headlines);
+    font-size: var(--fs-m);
+    color: var(--primaer-clr);
+    }
+    
